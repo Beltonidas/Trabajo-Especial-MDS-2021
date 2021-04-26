@@ -1,0 +1,54 @@
+
+#VISION STATEMENT
+	##PROBLEM STATEMENT
+		#El problema de
+
+		la falta de un medio común para comunicar a los ciudadanos
+		que quieren reciclar y organizar a los cartoneros que recolectan
+		dichos materiales.
+
+		#afecta
+
+		Todos los ciudadanos de Tandil.
+
+		#cuyo impacto es 
+
+		la falta de reciclaje por parte de la gente y el deterioro del medio
+		ambiente.
+
+		#una solución exitosa permitiría 
+
+		organizar tanto al pueblo como a los cartoneros para
+		combatir el deterioro ambiental. 
+
+	##PRODUCT STATEMENT
+		#Para
+		ciudadanos y cartoneros
+		
+		#quienes
+		recolectan y hacen uso del centro de acopio
+		#El sistema de administracion de reciclajes
+		es una herramienta de organizacion y gestión 
+
+		#que
+		Permite llevar un registro del material acopiado y conectar a los interesados del reciclaje
+		#A diferencia de
+		Un registro manual de lo recolectado por cartoneros.
+
+		#Nuestro producto
+		Brinda una forma ágil y eficiente de organizar a los cartoneros e interconectar 
+		a los ciudadanos.
+
+#TARGET GROUP
+	##STAKEHOLDERS SUMMARY
+		#Nombre: Representante de cartoneros.Representa a: los cartoneros. Responsabilidades: Seguimiento del proyecto para que se cumplan las necesidades de los cartoneros
+		#Nombre: Secretaria general. Representa a: centro de acopio. Responsabildades: Seguimiento del proyecto y aprobación del presupuesto.
+		#Nombre: Delegado Vecinal. Representa a: los ciudadanos. Responsabilidades: Seguimiento para mantener informados a los ciudadanos.
+	##USER SUMMARY
+		#Nombre: Ciudadano. Descripción: Comunicarse con la comunidad y recolectar materiales sin fines de lucro.StakeHolder: autorepresentado.
+		#Nombre: Cartonero. Descripción: Gestiona los datos del cartonero y regitra los materiales ingresados.StakeHolder: autorepresentado.
+		#Nombre: Secretaria. Descripción: administra los datos de los cartoneros y lleva el registro de las ventas de materiales.StakeHolder: autorepresentado.
+
+#NEEDS
+	##USEER NEEDS
+		#Necesidad: Recoleccion de materiales.Prioridad 
