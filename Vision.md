@@ -6,13 +6,13 @@
 
 ### afecta
 
->Todos los ciudadanos de Tandil.
+>a todos los ciudadanos de Tandil.
 
-### cuyo impacto es 
+### Su impacto es 
 
 >la falta de reciclaje por parte de la gente y el deterioro del medio ambiente.
 
-### una solución exitosa permitiría 
+### Una solución exitosa permitiría 
 
 >organizar tanto al pueblo como a los cartoneros para combatir el deterioro ambiental. 
 
@@ -21,18 +21,18 @@
 >ciudadanos y cartoneros
 		
 ### quienes
->recolectan y hacen uso del centro de acopio
+>recolectan y hacen uso del centro de acopio,
 
-### El sistema de administración de reciclajes
+### el sistema de administración de reciclajes
 >es una herramienta de organización y gestión 
 
 #### que
->Permite llevar un registro del material acopiado y conectar a los interesados del reciclaje
-### A diferencia de
->Un registro manual de lo recolectado por cartoneros.
+>permite llevar un registro del material acopiado y conectar a los interesados del reciclaje;
+### a diferencia de
+>un registro manual de lo recolectado por cartoneros.
 
 ### Nuestro producto
->Brinda una forma ágil y eficiente de organizar a los cartoneros e interconectar a los ciudadanos.
+>brinda una forma ágil y eficiente de organizar a los cartoneros e interconectar a los ciudadanos.
 
 # TARGET GROUP
 ## STAKEHOLDERS SUMMARY
@@ -72,7 +72,7 @@ Responsabilidades: Seguimiento para mantener informados a los ciudadanos.
 
 
 # PRODUCT
->Cartelera Virtual: en ella podrán crear posteos aquellos vecinos que se dirigen al centro de acopio y cuentan con lugar disponible en su vehículo, así los ciudadanos que cuenten con materiales para reciclar podrán postularse a los mencionados posteos; de esta forma se crea una intercomunicación entre los ciudadanos, facilitando el reciclado.
+>Cartelera Virtual: en ella podrán crear posteos aquellos vecinos que se dirigen al centro de acopio y cuentan con lugar disponible en su vehículo; así los ciudadanos que cuenten con materiales para reciclar, podrán postularse a los mencionados posteos; de esta forma se crea una intercomunicación entre los ciudadanos, facilitando el reciclado.
 
 >Instructivo: Instrucciones de cómo preparar los materiales para su ingreso al acopio de reciclaje. Además se debe mostrar el listado de los materiales aceptados
 .
