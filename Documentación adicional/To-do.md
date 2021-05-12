@@ -11,4 +11,7 @@
 >La secretaria puede acceder a la modificación de los materiales aceptados es decir armar el instructivo y poder alterarlo
 
 # Hacer
+	1- Modificar el cuadro de User Needs en soluciones actuales de Armar listado y Registrar el peso
+	2- En User Map separar en dos el informado del ciudadano, cambiar nombre de Actividad General
+	3- Crear Clase Oferta Transporte y quitar instructivo de cartelera, conectar a la secretaria con Cartelera
 
