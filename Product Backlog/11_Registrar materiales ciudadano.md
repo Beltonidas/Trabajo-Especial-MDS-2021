@@ -1,8 +1,8 @@
-# User Story Specification: <Registrar materiales ciudadano\>
+# User Story Specification: <Entrega de materiales del ciudadano\>
 
 ## 1.Description
 
->Como ciudadano quiero poder registrar mi material reciclable para contribuir con el centro de acopio.
+>Como ciudadano quiero entregar personalmente mi material reciclable para contribuir con el centro de acopio.
 
 ## 2.Acceptance Criteria
 
