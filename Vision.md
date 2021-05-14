@@ -55,17 +55,17 @@
 
 ## RESUMEN DE LOS USUARIOS
 
-| Nombre | Descripción | StakeHolder |
+| Nombre | Descripción | Interesado |
 | :---: | :---: | :---: |
 | Ciudadano | Comunicarse con la comunidad y recolectar materiales sin fines de lucro |  Autorepresentado |
 
 
-| Nombre | Descripción | StakeHolder |
+| Nombre | Descripción | Interesado |
 | :---: | :---: | :---: |
 | Cartonero | Gestiona los datos del cartonero y registra los materiales ingresados |  Autorepresentado |
 
 
-| Nombre | Descripción | StakeHolder |
+| Nombre | Descripción | Interesado |
 | :---: | :---: | :---: |
 | Secretaria | Administra los datos de los cartoneros y lleva el registro de las ventas de materiales |  Autorepresentado |
 
