@@ -6,16 +6,6 @@ public class VistaLogin {
     public VistaLogin() {
     }
 
-    //public int getIdLogin() {
-    //    return idLogin;
-    //}
-
-    //public void setIdLogin(int idLogin) {
-    //    this.idLogin = idLogin;
-    //}
-
-    public void dibujarLogin(){};
-
     public void comprobarSintaxysUsuario(String usuario){
         String palabra = usuario;
     }
@@ -34,9 +24,7 @@ public class VistaLogin {
         datos.add(1,clave);
         return datos;
         //fin Reemplazar al descubrir como leer y comprobar caracter por caracter
-
-        //secretaria.setEstadoLogin(login.verificarLogin(usuario, clave));
-        //login.verificarLogin(usuario, clave, secretaria));
+        // IMPLEMENTAR LO DE QUE SE MUESTREN UNICAMENTE CARACTERES
     }
 
 }
