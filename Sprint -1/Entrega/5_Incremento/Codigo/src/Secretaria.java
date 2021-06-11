@@ -2,8 +2,8 @@ public class Secretaria {
     private boolean estadoLogin;
 
 
-    public Secretaria() {
-        this.estadoLogin = false;
+    public Secretaria(boolean estadoLogin) {
+        this.estadoLogin = estadoLogin;
     }
 
     public boolean isEstadoLogin() {

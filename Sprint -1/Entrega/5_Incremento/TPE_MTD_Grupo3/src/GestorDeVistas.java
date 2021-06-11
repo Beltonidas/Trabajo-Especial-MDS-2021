@@ -14,7 +14,7 @@ public class GestorDeVistas {
                 Scanner sc = new Scanner(System.in);
                 String eleccion = sc.nextLine();
                 APIsesion virtualSession = new APIsesion();
-                Secretaria cecilia = new Secretaria(false);
+                Secretaria cecilia = new Secretaria();
 
                 switch (eleccion) {
                     case "1": {
