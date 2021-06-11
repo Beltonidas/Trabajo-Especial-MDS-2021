@@ -29,8 +29,11 @@ public class VistaSecretaria{
                     int DNI = sc.nextInt();
                     System.out.println("Ingrese el vehiculo del cartonero");
                     char vehiculo =sc.next().charAt(0);
-                    aPIsession.agregarCartonero(secretaria,nombre,apellido,DNI,vehiculo,direccion);
-                    System.out.println("Cartonero guardado");
+                    boolean registrado= aPIsession.agregarCartonero(secretaria,nombre,apellido,DNI,vehiculo,direccion);
+                    if (registrado)
+                        System.out.println("Cartonero guardado");
+                    else
+                        System.out.println("No se pudo guardar el cartonero");
                 }
                     break;
 
