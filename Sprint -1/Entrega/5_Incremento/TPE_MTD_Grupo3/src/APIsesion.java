@@ -9,15 +9,16 @@ public class APIsesion {
         }else
             return false;
     }
-
     public VistaSecretaria logearse(ArrayList<String> datos, Secretaria secretaria){
         BaseDatos baseDatos = new BaseDatos();
-        boolean fueExitoso=baseDatos.getNombreUsuario().equals(datos.get(0)) &&
-                baseDatos.getClave().equals(datos.get(1));
+        String nombre = baseDatos.getNombreUsuario();
+        String clave = baseDatos.getClave();
+        boolean fueExitoso=nombre.equals(datos.get(0)) && clave.equals(datos.get(1)); 
         secretaria.setEstadoLogin(fueExitoso);
-        if (fueExitoso)
-            return new VistaSecretaria();
-        return null; //El login no fue exitoso
+            if (fueExitoso)
+                return new VistaSecretaria();
+            else
+                return null; //El login no fue exitoso
     }
 
 
