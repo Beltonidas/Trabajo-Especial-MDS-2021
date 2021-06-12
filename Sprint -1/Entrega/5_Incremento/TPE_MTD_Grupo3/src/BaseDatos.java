@@ -5,7 +5,7 @@ public class BaseDatos {
 
     public BaseDatos() {
         this.nombreUsuario = "Cecilia";
-        this.clave = "1234";
+        this.clave = "123456789";
     }
 
     public String getNombreUsuario() {
