@@ -1,11 +1,12 @@
 import java.util.ArrayList;
+import java.util.Date;
 
 public class APIsesion {
     private GestorCartonero gestorCartonero=new GestorCartonero();
 
-    public boolean agregarCartonero(Secretaria secretaria, String nombre, String apellido, int dni, char vehiculo, String direccion){
+    public boolean agregarCartonero(Secretaria secretaria, String nombre, String apellido, int dni, char vehiculo, String direccion, Date fecha){
         if(secretaria.isEstadoLogin()){
-            return gestorCartonero.agregarCartonero(nombre,apellido,dni,vehiculo,direccion);
+            return gestorCartonero.agregarCartonero(nombre,apellido,dni,vehiculo,direccion,fecha);
         }else
             return false;
     }

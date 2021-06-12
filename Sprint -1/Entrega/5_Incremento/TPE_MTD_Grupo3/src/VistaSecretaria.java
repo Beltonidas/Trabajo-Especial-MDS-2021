@@ -1,3 +1,6 @@
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class VistaSecretaria{
@@ -18,6 +21,8 @@ public class VistaSecretaria{
 
             switch(eleccion) {
                 case "1": {
+                    String pattern = "dd/MM/yyyy";
+                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
                     System.out.println("A continuación se le pedirán los datos del cartonero:");
                     System.out.println("Ingrese el nombre del cartonero");
                     String nombre = sc.nextLine();
@@ -25,11 +30,17 @@ public class VistaSecretaria{
                     String apellido = sc.nextLine();
                     System.out.println("Ingrese la direccion del cartonero");
                     String direccion = sc.nextLine();
+                    System.out.println("Ingrese la fecha de nacimiento del cartonero, con el formato: 01/02/1941");
+                    String fecha =sc.nextLine();
+                    ParsePosition pos= new ParsePosition(0);
+                    Date date = simpleDateFormat.parse(fecha,pos);
+                    String test = simpleDateFormat.format(date);
+                    System.out.println(test);
                     System.out.println("Ingrese el DNI del cartonero");
                     int DNI = sc.nextInt();
                     System.out.println("Ingrese el vehiculo del cartonero");
                     char vehiculo =sc.next().charAt(0);
-                    boolean registrado= aPIsession.agregarCartonero(secretaria,nombre,apellido,DNI,vehiculo,direccion);
+                    boolean registrado= aPIsession.agregarCartonero(secretaria,nombre,apellido,DNI,vehiculo,direccion, date);
                     if (registrado)
                         System.out.println("Cartonero guardado");
                     else

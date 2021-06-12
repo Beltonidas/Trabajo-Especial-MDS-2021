@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -19,8 +20,8 @@ public class GestorCartonero {
         this.listaCartonero = listaCartonero;
     }
 
-    public boolean agregarCartonero(String nombre, String apellido, int dni, char vehiculo, String direccion){
-        Cartonero nuevoCartonero = new Cartonero(nombre, apellido, dni, vehiculo, direccion);
+    public boolean agregarCartonero(String nombre, String apellido, int dni, char vehiculo, String direccion, Date fecha){
+        Cartonero nuevoCartonero = new Cartonero(nombre, apellido, dni, vehiculo, direccion,fecha);
         if (!listaCartonero.contains(nuevoCartonero)){
             listaCartonero.add(nuevoCartonero);
             return true;
