@@ -4,8 +4,4 @@ Requisitos:
 -Debe tener un constructor GestorCartonero.
 -Debe tener un método público getListaCartonero de tipo List<Cartonero>.
 -Debe tener un método público setListaCartonero de tipo void.
--Debe tener un método público getRegistroKilos de tipo HashMap<Cartonero,Float>.
--Debe tener un método público setRegistroKilos de tipo void.
 -Debe tener un método público agregarCartonero de tipo boolean.
--Debe tener un método público quitarCartonero de tipo boolean.
--Debe tener un método público modCartonero de tipo boolean.
