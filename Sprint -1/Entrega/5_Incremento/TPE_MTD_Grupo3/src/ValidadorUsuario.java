@@ -1,9 +1,9 @@
-public class BaseDatos {
+public class ValidadorUsuario {
     //simulamos una base de datos donde vamos a trae los valores para comparar
     private String nombreUsuario;
     private String clave;
 
-    public BaseDatos() {
+    public ValidadorUsuario() {
         this.nombreUsuario = "Cecilia";
         this.clave = "123456789";
     }

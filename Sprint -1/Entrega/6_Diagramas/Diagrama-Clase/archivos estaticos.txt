@@ -1,5 +1,0 @@
-base de datos, nombre muy general
-base de datos --> ValidadorUsuario
-las flecha de vista secretaria y API esta mal va otra
-
-en gestor de vista meter un metodo para desplegar el menu

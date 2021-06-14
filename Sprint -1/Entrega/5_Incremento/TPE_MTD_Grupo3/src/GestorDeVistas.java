@@ -13,35 +13,38 @@ public class GestorDeVistas {
                 System.out.println("5: cerrar pagina");
                 Scanner sc = new Scanner(System.in);
                 String eleccion = sc.nextLine();
-                APIsesion virtualSession = new APIsesion();
-                Secretaria cecilia = new Secretaria();
-
-                switch (eleccion) {
-                    case "1": {
-                        VistaLogin vistaLogin = new VistaLogin();
-                        ArrayList<String> datosLogin = vistaLogin.desplegarMenu(cecilia);
-                        VistaSecretaria vistaSecretaria = virtualSession.logearse(datosLogin, cecilia);
-                        if (vistaSecretaria != null) {
-                            vistaSecretaria.desplegarMenu(cecilia);
-                            pagina=false;
-                        }
-                        else
-                            System.out.println("No se pudo acceder");
-                        break;
-                    }
-                    case "2":{}break; // Se muestra la cartelera en pantalla
-
-                    case "3":{}break;// Se muestra el listado de materiales
-
-                    case "4":{}break;// Se muestra el instructivo
-
-                    case "5": {pagina=false;}break;//Cierra la pagina
-
-                    default:
-                }
-
+                GestorDeVistas.logicaMenu(eleccion);
             }
-
         }
 
+
+    public static boolean logicaMenu(String eleccion) {
+        APIsesion virtualSession = new APIsesion();
+        Secretaria cecilia = new Secretaria();
+        switch (eleccion) {
+            case "1": {
+                VistaLogin vistaLogin = new VistaLogin();
+                ArrayList<String> datosLogin = vistaLogin.desplegarMenu(cecilia);
+                VistaSecretaria vistaSecretaria = virtualSession.logearse(datosLogin, cecilia);
+                if (vistaSecretaria != null) {
+                    vistaSecretaria.desplegarMenu(cecilia);
+                    return false;
+                }
+                else{
+                    System.out.println("No se pudo acceder");
+                    return true;
+                }
+            }
+            case "2":{return true;}//break; // Se muestra la cartelera en pantalla
+
+            case "3":{return true;}//break;// Se muestra el listado de materiales
+
+            case "4":{return true;}//break;// Se muestra el instructivo
+
+            case "5": {return false;}//break;//Cierra la pagina
+
+            default:{System.out.println("Valor incorrecto");
+                    return true;}
+        }
+    }
 }
