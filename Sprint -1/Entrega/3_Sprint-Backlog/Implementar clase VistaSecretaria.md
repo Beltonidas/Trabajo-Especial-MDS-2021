@@ -1,8 +1,6 @@
 Requisitos:
-- Debe tener un atributo privado aPIsession de tipo APIsesion.
-- Debe tener un constructor público VistaSecretaria.
-- Debe tener un método público GestionarCartonero de tipo void.
-- Debe tener un método público desplegarMenu de tipo void.
+- Debe tener un objeto APIsesion.
+-Debe implementar los métodos para poder mostrar el menú de secretaria y el menú de modificación de cartoneros
 
 
 
