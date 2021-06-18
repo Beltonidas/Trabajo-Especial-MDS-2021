@@ -16,11 +16,11 @@ public class GestorMateriales {
             int indice = listaMateriales.get(dni).indexOf(material);
             Material contenido = listaMateriales.get(dni).get(indice);
             contenido.agregarKilos(material.getKilos());
+            return true;
         }
     }
     public void kilosMaterialesCartonero(int dni){
         for (Material pMaterial: listaMateriales.get(dni))
             pMaterial.toString();
     }
-
 }
