@@ -8,9 +8,10 @@ public class GestorMateriales {
         listaMateriales= new HashMap<Integer, ArrayList<Material>>();
     }
 
-    public void agregarMaterial(int dni, Material material) {
+    public boolean agregarMaterial(int dni, Material material) {
         if(!listaMateriales.get(dni).contains(material)){
             listaMateriales.get(dni).add(material);
+            return true;
         }
         else {
             int indice = listaMateriales.get(dni).indexOf(material);
@@ -19,6 +20,7 @@ public class GestorMateriales {
             return true;
         }
     }
+
     public void kilosMaterialesCartonero(int dni){
         for (Material pMaterial: listaMateriales.get(dni))
             pMaterial.toString();

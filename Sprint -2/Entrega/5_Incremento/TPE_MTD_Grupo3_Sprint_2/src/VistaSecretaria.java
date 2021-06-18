@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -15,7 +16,8 @@ public class VistaSecretaria{
             System.out.println("1: Agregar cartonero");
             System.out.println("2: Modificar Cartonero");
             System.out.println("3: Eliminar Cartonero");
-            System.out.println("4: Cerrar Menu");
+            System.out.println("4: Ver materiales de un cartonero");
+            System.out.println("5: Cerrar Menu");
             Scanner sc = new Scanner(System.in);
             String eleccion = sc.nextLine();
 
@@ -89,6 +91,25 @@ public class VistaSecretaria{
                     break;
 
                 case "4": {
+                    char confirmacionIdentidad = 'n';
+                    int dni=0;
+                    while (confirmacionIdentidad == 'n') {
+                        System.out.println("Ingrese el dni del cartonero a revisar");
+                        dni = sc.nextInt();
+                        System.out.println("Esta seguro que ingreso el dni correcto? " + dni);
+                        System.out.println("Si seguro ingrese s, sino n");
+                    }
+                    confirmacionIdentidad =sc.next().charAt(0);
+                    String eleccionDni = sc.nextLine();
+                    boolean kilos;
+                    if (eleccionDni.equals("s"))
+                        kilos = aPIsession.mostrarKilos(secretaria, dni);
+                    else
+                        System.out.println("Ingrese de nuevo por teclado");
+                }
+
+                    break;
+                case "5": {
                     repetir = false;
                 }
                     break;

@@ -38,4 +38,19 @@ public class APIsesion {
         }else
             return false;
     }
+
+    public boolean agregarMaterial(Secretaria secretaria, Material material, int dni){
+        if(secretaria.isEstadoLogin()){
+            return gestorMateriales.agregarMaterial(dni,material);
+        }else
+            return false;
+    }
+
+    public boolean mostrarKilos(Secretaria secretaria, int dni){
+        if(secretaria.isEstadoLogin()){
+            gestorMateriales.kilosMaterialesCartonero(dni);
+            return true;
+        }
+        return false;
+    }
 }
