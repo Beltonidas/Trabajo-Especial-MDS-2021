@@ -32,9 +32,11 @@ public class VistaLogin {
         }
 
         System.out.println("Ingrese su clave");
-        Console cons = System.console();
-        char[] password = cons.readPassword();
-        String clave = new String(password);
+        //Console cons = System.console();
+        //char[] password = cons.readPassword();
+        //String clave = new String(password);
+
+        String clave = sc.nextLine();
 
         if(!this.comprobarSintaxis(clave)) {
             System.out.println("Clave invalida");

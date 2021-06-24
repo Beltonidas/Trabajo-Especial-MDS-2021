@@ -14,7 +14,7 @@ public class Cartonero {
     public Cartonero(String nombre, String apellido, int dni, char vehiculo, String direccion, Date fecha) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.dni = this.dni;
+        this.dni = dni;
         this.vehiculo = vehiculo;
         this.direccion = direccion;
         this.listaRecorrido = new ArrayList<>();
@@ -54,5 +54,13 @@ public class Cartonero {
     public void setFechaNacim(Date fechaNacim) {
         if (fechaNacim != null)
             this.fechaNacim = fechaNacim;
+    }
+
+    @Override
+    public String toString() {
+        return "Cartonero{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                '}';
     }
 }

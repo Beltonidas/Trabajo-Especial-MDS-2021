@@ -48,7 +48,7 @@ public class APIsesion {
 
     public boolean mostrarKilos(Secretaria secretaria, int dni){
         if(secretaria.isEstadoLogin()){
-            gestorMateriales.kilosMaterialesCartonero(dni);
+            gestorMateriales.kilosMaterialesPorCartonero(gestorCartonero.getListaCartonero());
             return true;
         }
         return false;

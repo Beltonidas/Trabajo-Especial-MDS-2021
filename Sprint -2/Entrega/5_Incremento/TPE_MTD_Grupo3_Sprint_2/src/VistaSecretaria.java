@@ -91,23 +91,8 @@ public class VistaSecretaria{
                     break;
 
                 case "4": {
-                    char confirmacionIdentidad = 'n';
-                    int dni=0;
-                    while (confirmacionIdentidad == 'n') {
-                        System.out.println("Ingrese el dni del cartonero a revisar");
-                        dni = sc.nextInt();
-                        System.out.println("Esta seguro que ingreso el dni correcto? " + dni);
-                        System.out.println("Si seguro ingrese s, sino n");
+                        boolean exitoso = aPIsession.mostrarKilos(secretaria);
                     }
-                    confirmacionIdentidad =sc.next().charAt(0);
-                    String eleccionDni = sc.nextLine();
-                    boolean kilos;
-                    if (eleccionDni.equals("s"))
-                        kilos = aPIsession.mostrarKilos(secretaria, dni);
-                    else
-                        System.out.println("Ingrese de nuevo por teclado");
-                }
-
                     break;
                 case "5": {
                     repetir = false;

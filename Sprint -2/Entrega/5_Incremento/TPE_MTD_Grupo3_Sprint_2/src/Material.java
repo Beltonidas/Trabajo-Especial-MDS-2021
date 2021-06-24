@@ -36,6 +36,18 @@ public class Material {
     }
 
     @Override
+    public boolean equals(Object o1){
+        try {
+            Material m= (Material) o1;
+            return nombre.equals(m.getNombre()) &&  tipo.equals(m.getTipo());
+        }
+        catch (Exception e){
+            return false;
+        }
+
+    }
+
+    @Override
     public String toString() {
         return "Material{" +
                 "nombre='" + nombre + '\'' +
