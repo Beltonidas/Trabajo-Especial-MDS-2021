@@ -17,7 +17,8 @@ public class VistaSecretaria{
             System.out.println("2: Modificar Cartonero");
             System.out.println("3: Eliminar Cartonero");
             System.out.println("4: Ver materiales de un cartonero");
-            System.out.println("5: Cerrar Menu");
+            System.out.println("5: Registrar material de cartonero");
+            System.out.println("6: Cerrar Menu");
             Scanner sc = new Scanner(System.in);
             String eleccion = sc.nextLine();
 
@@ -94,7 +95,29 @@ public class VistaSecretaria{
                         boolean exitoso = aPIsession.mostrarKilos(secretaria);
                     }
                     break;
+
                 case "5": {
+                    int dni=0;
+                    String nombre=null;
+                    String tipo= null;
+                    double peso=0;
+                    //pedirDatosMaterial(sc,dni, nombre, tipo, peso);
+
+                    System.out.println("Ingrese el nombre del material");
+                    nombre= sc.nextLine();
+                    System.out.println("Ingrese el tipo del material");
+                    tipo= sc.nextLine();
+                    System.out.println("Ingrese la cantidad de kilos del material");
+                    peso= sc.nextDouble();
+                    System.out.println("Ingrese el dni del cartonero que desea registrar materiales");
+                    dni= sc.nextInt();
+
+                    Material aRegitrar= new Material(nombre, tipo, peso);
+                    boolean material= aPIsession.agregarMaterial(secretaria, aRegitrar, dni);
+                }
+                break;
+
+                case "6": {
                     repetir = false;
                 }
                     break;
@@ -133,4 +156,16 @@ public class VistaSecretaria{
             }
         }
     }
+    private void pedirDatosMaterial(Scanner sc, int dni, String nombre, String tipo, double peso){
+        System.out.println("Ingrese el dni del cartonero que desea registrar materiales");
+        dni= sc.nextInt();
+        System.out.println("Ingrese el nombre del material");
+        nombre= sc.nextLine();
+        System.out.println("Ingrese el tipo del material");
+        tipo= sc.nextLine();
+        System.out.println("Ingrese la cantidad de kilos del material");
+        peso= sc.nextDouble();
+    }
+
+    //private void caso1()
 }
