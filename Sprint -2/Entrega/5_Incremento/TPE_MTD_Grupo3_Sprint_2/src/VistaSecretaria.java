@@ -170,7 +170,7 @@ public class VistaSecretaria{
             }
         }
     }
-    private void pedirDatosMaterial(Scanner sc, int dni, String nombre, String tipo, double peso){
+        private void pedirDatosMaterial(Scanner sc, int dni, String nombre, String tipo, double peso){
         System.out.println("Ingrese el dni del cartonero que desea registrar materiales");
         dni= sc.nextInt();
         System.out.println("Ingrese el nombre del material");
