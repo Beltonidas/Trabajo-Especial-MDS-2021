@@ -16,7 +16,7 @@ public class VistaSecretaria{
             System.out.println("1: Agregar cartonero");
             System.out.println("2: Modificar Cartonero");
             System.out.println("3: Eliminar Cartonero");
-            System.out.println("4: Ver materiales de un cartonero");
+            System.out.println("4: Ver materiales de los cartonero");
             System.out.println("5: Registrar material de cartonero");
             System.out.println("6: Cerrar Menu");
             Scanner sc = new Scanner(System.in);
@@ -42,7 +42,7 @@ public class VistaSecretaria{
                     System.out.println("Ingrese el DNI del cartonero");
                     int DNI = sc.nextInt();
                     System.out.println("Ingrese el vehiculo del cartonero");
-                    char vehiculo =sc.next().charAt(0);
+                    char vehiculo = sc.next().charAt(0);
                     boolean registrado= aPIsession.agregarCartonero(secretaria,nombre,apellido,DNI,vehiculo,direccion, date);
                     if (registrado)
                         System.out.println("Cartonero guardado");
@@ -97,21 +97,14 @@ public class VistaSecretaria{
                     break;
 
                 case "5": {
-                    int dni=0;
-                    String nombre=null;
-                    String tipo= null;
-                    double peso=0;
-                    //pedirDatosMaterial(sc,dni, nombre, tipo, peso);
-
                     System.out.println("Ingrese el nombre del material");
-                    nombre= sc.nextLine();
+                    String nombre= sc.nextLine();
                     System.out.println("Ingrese el tipo del material");
-                    tipo= sc.nextLine();
+                    String tipo= sc.nextLine();
                     System.out.println("Ingrese la cantidad de kilos del material");
-                    peso= sc.nextDouble();
+                    double peso= sc.nextDouble();
                     System.out.println("Ingrese el dni del cartonero que desea registrar materiales");
-                    dni= sc.nextInt();
-
+                    int dni= sc.nextInt();
                     Material aRegitrar= new Material(nombre, tipo, peso);
                     boolean material= aPIsession.agregarMaterial(secretaria, aRegitrar, dni);
                 }
@@ -156,16 +149,4 @@ public class VistaSecretaria{
             }
         }
     }
-        private void pedirDatosMaterial(Scanner sc, int dni, String nombre, String tipo, double peso){
-        System.out.println("Ingrese el dni del cartonero que desea registrar materiales");
-        dni= sc.nextInt();
-        System.out.println("Ingrese el nombre del material");
-        nombre= sc.nextLine();
-        System.out.println("Ingrese el tipo del material");
-        tipo= sc.nextLine();
-        System.out.println("Ingrese la cantidad de kilos del material");
-        peso= sc.nextDouble();
-    }
-
-    //private void caso1()
 }
