@@ -104,11 +104,11 @@ public class VistaSecretaria{
                     //pedirDatosMaterial(sc,dni, nombre, tipo, peso);
 
                     System.out.println("Ingrese el nombre del material");
-                    nombre= sc.nextLine();
+                    String nombre= sc.nextLine();
                     System.out.println("Ingrese el tipo del material");
-                    tipo= sc.nextLine();
+                    String tipo= sc.nextLine();
                     System.out.println("Ingrese la cantidad de kilos del material");
-                    peso= sc.nextDouble();
+                    double peso= sc.nextDouble();
                     System.out.println("Ingrese el dni del cartonero que desea registrar materiales");
                     dni= sc.nextInt();
 
