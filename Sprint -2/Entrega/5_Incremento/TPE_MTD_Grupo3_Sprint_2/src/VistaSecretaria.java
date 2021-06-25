@@ -16,7 +16,7 @@ public class VistaSecretaria{
             System.out.println("1: Agregar cartonero");
             System.out.println("2: Modificar Cartonero");
             System.out.println("3: Eliminar Cartonero");
-            System.out.println("4: Ver materiales de un cartonero");
+            System.out.println("4: Ver materiales de los cartonero");
             System.out.println("5: Registrar material de cartonero");
             System.out.println("6: Cerrar Menu");
             Scanner sc = new Scanner(System.in);
