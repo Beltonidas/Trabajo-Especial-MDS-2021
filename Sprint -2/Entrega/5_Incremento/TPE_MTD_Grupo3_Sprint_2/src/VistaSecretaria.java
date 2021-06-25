@@ -24,6 +24,14 @@ public class VistaSecretaria{
 
             switch(eleccion) {
                 case "1": {
+
+                    //String nombre="";
+                    //String apellido="";
+                    //Integer DNI=0;
+                    //Character v='c';
+                    //String direccion="";
+                    //Date date=null;
+
                     String pattern = "dd/MM/yyyy";
                     SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
                     System.out.println("A continuación se le pedirán los datos del cartonero:");
@@ -42,7 +50,13 @@ public class VistaSecretaria{
                     System.out.println("Ingrese el DNI del cartonero");
                     int DNI = sc.nextInt();
                     System.out.println("Ingrese el vehiculo del cartonero");
-                    char vehiculo =sc.next().charAt(0);
+                    char vehiculo = sc.next().charAt(0);
+
+                    //this.caso1(sc, secretaria, nombre, apellido, dni, v, direc, fecha); // No se modifican al final
+                    //System.out.println(nombre); //probando
+                    //System.out.println(apellido); //probando
+                    //System.out.println(dni); //probando
+
                     boolean registrado= aPIsession.agregarCartonero(secretaria,nombre,apellido,DNI,vehiculo,direccion, date);
                     if (registrado)
                         System.out.println("Cartonero guardado");
@@ -169,3 +183,26 @@ public class VistaSecretaria{
 
     //private void caso1()
 }
+
+
+
+
+/*String pattern = "dd/MM/yyyy";
+                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+                    System.out.println("A continuación se le pedirán los datos del cartonero:");
+                    System.out.println("Ingrese el nombre del cartonero");
+                    String nombre = sc.nextLine();
+                    System.out.println("Ingrese el apellido del cartonero");
+                    String apellido = sc.nextLine();
+                    System.out.println("Ingrese la direccion del cartonero");
+                    String direccion = sc.nextLine();
+                    System.out.println("Ingrese la fecha de nacimiento del cartonero, con el formato: 01/02/1941");
+                    String fecha =sc.nextLine();
+                    ParsePosition pos= new ParsePosition(0);
+                    Date date = simpleDateFormat.parse(fecha,pos);
+                    String test = simpleDateFormat.format(date);
+                    System.out.println(test);
+                    System.out.println("Ingrese el DNI del cartonero");
+                    int DNI = sc.nextInt();
+                    System.out.println("Ingrese el vehiculo del cartonero");
+                    char vehiculo =sc.next().charAt(0);*/
