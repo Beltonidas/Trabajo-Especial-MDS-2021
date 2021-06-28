@@ -1,0 +1,13 @@
+Requisitos:
+- Debe tener un atributo privado nombre de tipo String.
+- Debe tener un atributo privado apellido de tipo String.
+- Debe tener un atributo privado dni de tipo int.
+- Debe tener un atributo privado vehiculo de tipo char.
+- Debe tener un atributo privado direccion de tipo String.
+- Debe tener un atributo privado listaRecorrido de tipo List<String>.
+-Debe tener un constructor público Cartonero.
+-Debe tener un método público setNombre de tipo void.
+-Debe tener un método público setApellido de tipo void.
+-Debe tener un método público setDNI de tipo void.
+-Debe tener un método público setVehiculo de tipo void.
+-Debe tener un método público setDireccion de tipo void.
