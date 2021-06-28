@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class GestorMateriales {
-    private HashMap<Integer, ArrayList<Material>> listaMateriales;
+            private HashMap<Integer, ArrayList<Material>> listaMateriales;
 
     public GestorMateriales() {
         //ArrayList <Material>  materiales= new ArrayList<Material>() ;
